@@ -5,7 +5,7 @@ url='https://wiki.ros.org/perception_pcl'
 pkgname='ros-melodic-pointcloud-to-laserscan'
 pkgver='1.4.1'
 arch=('i686' 'x86_64' 'aarch64' 'armv7h' 'armv6h')
-pkgrel=3
+pkgrel=4
 license=('BSD')
 
 ros_makedepends=(ros-melodic-tf2-sensor-msgs
@@ -15,7 +15,8 @@ ros_makedepends=(ros-melodic-tf2-sensor-msgs
   ros-melodic-catkin
   ros-melodic-tf2-ros
   ros-melodic-tf2
-  ros-melodic-message-filters)
+  ros-melodic-message-filters
+  ros-melodic-roslint)
 makedepends=('cmake' 'ros-build-tools'
   ${ros_makedepends[@]})
 
